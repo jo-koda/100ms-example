@@ -1,0 +1,56 @@
+{
+  "Customers": {
+    "customers": "CUSTOMERS"
+  },
+  "Features": {
+    "features": "FEATURES"
+  },
+  "ForgotPassword": {
+    "emailAddress": "Email Address",
+    "forgotPassword": "Forgot Password",
+    "submit": "Submit"
+  },
+  "Home": {
+    "layout": "Layout",
+    "sample": "SAMPLE {number}",
+    "signUp": "Sign Up"
+  },
+  "Integrations": {
+    "Integrations": "INTEGRATIONS"
+  },
+  "NavBar": {
+    "features": "Features",
+    "customers": "Customers",
+    "integrations": "Integrations"
+  },
+  "ResetPassword": {
+    "confirmPassword": "Confirm Password",
+    "doesNotMatchPassword": "Does not match password",
+    "resetPassword": "Reset Password",
+    "password": "Password",
+    "submit": "Submit"
+  },
+  "SignIn": {
+    "emailAddress": "Email Address",
+    "forgotPassword": "Forgot password?",
+    "password": "Password",
+    "signIn": "Sign In"
+  },
+  "SignUp": {
+    "confirmPassword": "Confirm Password",
+    "doesNotMatchPassword": "Does not match password",
+    "emailAddress": "Email Address",
+    "password": "Password",
+    "signUp": "Sign Up"
+  },
+  "Verify": {
+    "resendCode": "Resend Code",
+    "resendCodeDate": "Resend Code: {date}",
+    "verificationCode": "Verification Code",
+    "verify": "Verify"
+  },
+  "VerificationSent": {
+    "verificationSent": "Verification Sent",
+    "pleaseCheckYourEmail": "Please check you email."
+  }
+}
