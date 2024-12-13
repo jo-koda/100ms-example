@@ -1,5 +1,5 @@
-'use client';
+'use client'
 
 export default function Header() {
-  return <div></div>;
+  return <div className='text-xl font-semibold'>Join room</div>
 }
