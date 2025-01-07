@@ -18,15 +18,17 @@ export default function ConferenceRoom() {
         })}
         <div className="min-h-10 max-w-screen-lg overflow-x-auto">
           <div className="flex min-w-[150%] gap-4 border">
-            {peers.map((peer, index) => {
-              if (index != 0) {
-                return (
-                  <SubVideoCard
-                    key={`${peer.id}-${Math.random()}`}
-                    peer={peer}
-                  />
-                );
-              }
+            {[1, 2, 3, 4, 5, 6].map(() => {
+              return peers.map((peer, index) => {
+                if (index != 0) {
+                  return (
+                    <SubVideoCard
+                      key={`${peer.id}-${Math.random()}`}
+                      peer={peer}
+                    />
+                  );
+                }
+              });
             })}
           </div>
         </div>
