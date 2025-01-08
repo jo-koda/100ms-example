@@ -5,6 +5,7 @@ import RoomTable from './_sections/room-table';
 
 export default async function Page() {
   const rooms = await indexRooms();
+
   return (
     <Providers rooms={rooms}>
       <div className="flex h-full flex-col gap-4">

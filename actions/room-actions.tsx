@@ -30,6 +30,7 @@ export async function indexRooms() {
   try {
     revalidateTag('rooms');
     let result = await index();
+    console.log('hEY: ', result.ok);
     if (result.ok) {
       return camelize(await result.json()).data as Room[];
     }
