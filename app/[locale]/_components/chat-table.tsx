@@ -12,6 +12,7 @@ import {
 import { IoSend } from 'react-icons/io5'
 import { Textarea } from '@nextui-org/input'
 import { useState } from 'react'
+
 const chats = [
   { message: 'Hi' },
   { message: 'Hi' },
@@ -43,7 +44,7 @@ export default function ChatTable() {
   }
 
   return (
-    <Card className='h-[700px] w-96'>
+    <Card className='flex w-96 flex-col'>
       <CardHeader className='flex gap-3'>
         <Image
           alt='nextui logo'
@@ -57,14 +58,14 @@ export default function ChatTable() {
         </div>
       </CardHeader>
       <Divider />
-      <CardBody className='flex flex-col gap-4 p-0'>
-        <div className='overflow h-full bg-red-500'>
+      <CardBody className='flex h-full flex-col overflow-auto p-0'>
+        <div className='flex h-full flex-col'>
           {chats.map((chat, index) => (
             <div
               key={index}
               className={`flex ${
                 index % 2 === 0 ? 'justify-end' : 'justify-start'
-              } rounded-md`}
+              } m-4 rounded-md`}
             >
               <p
                 className={`rounded-lg p-2 ${
@@ -76,20 +77,23 @@ export default function ChatTable() {
             </div>
           ))}
         </div>
-        <div className='h-1/2'>
-          <Textarea
-            className='h-full min-h-[200px] w-full'
-            value={value} // Bind value to the Textarea
-            onChange={handleChange} // Handle change to update value
-            placeholder='Enter your text'
-            endContent={
-              value !== '' ? <IoSend className='text-end text-white' /> : null
-            }
-          />
-        </div>
+        <Divider />
       </CardBody>
+      {/* Div and Textarea height matching */}
+      <div className='max-h-96 min-h-10 border'>
+        <Textarea
+          value={value}
+          onChange={handleChange}
+          classNames={{
+            inputWrapper: 'rounded-t-none',
+          }}
+          className='w-full'
+          placeholder='Enter your message'
+          endContent={
+            value.length !== 0 ? <IoSend className='text-white'></IoSend> : null
+          }
+        />
+      </div>
     </Card>
   )
 }
-
-// adadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadadada

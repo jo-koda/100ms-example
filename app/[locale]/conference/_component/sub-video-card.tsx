@@ -13,7 +13,7 @@ export default function SubVideoCard({ peer }: { peer: HMSPeer }) {
 
   const toggleMic = () => setMicOn((prev) => !prev)
   return (
-    <div className='aspect-w-16 aspect-h-9 relative flex max-h-[200px] min-h-[150px] w-full min-w-[250px] max-w-[300px]'>
+    <div className='relative flex max-h-[200px] min-h-[150px] w-full min-w-[250px] max-w-[300px]'>
       <video
         className='h-full w-full object-cover'
         ref={videoRef}

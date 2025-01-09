@@ -6,7 +6,7 @@ import ChatTable from '../_components/chat-table'
 export default async function Page() {
   return (
     <Providers>
-      <div className='flex w-full justify-between'>
+      <div className='flex h-[800px] w-full justify-between'>
         <div className='flex h-full flex-col'>
           <Header />
           <ConferenceRoom />

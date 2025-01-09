@@ -10,7 +10,7 @@ export default function ConferenceRoom() {
   const peers = useHMSStore(selectPeers)
   if (peers.length != 0) {
     return (
-      <div className='flex w-full flex-col items-center gap-2 overflow-auto border border-green-500'>
+      <div className='flex w-full flex-col items-center gap-2 overflow-auto border'>
         {peers.map((peer, index) => {
           if (index == 0) {
             return <VideoCard key={peer.id} peer={peer} />
